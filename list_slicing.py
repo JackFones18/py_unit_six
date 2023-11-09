@@ -1,30 +1,29 @@
-def main():
 
-    # The list below will be used for all of the exercises below:
-    names = ["Abigail", "Brenda", "Chad", "Doug", "Emma", "Francis", "George", "Harold", "Imogen”",
+
+names = ["Abigail", "Brenda", "Chad", "Doug", "Emma", "Francis", "George", "Harold", "Imogen”",
     "Jackie", "Kurt", "Linda"]
 
     # Example: print the first three names from the list
     # Answer print(names[0:3])
 
     # 1. Print ['Doug', 'Emma']
-
+print(names[3:5])
 
 
     # 2. Print [‘Brenda’, ‘Chad’, ‘Doug’, ‘Emma’, ‘Francis’]
 
-
+print(names[1:6])
 
     # 3. [‘Francis’, ‘George’, ‘Harold’, ‘Imogen’, ‘Jackie’, ‘Kurt’, ‘Linda’] (using two numbers in the slice)
 
-
+print(names[5:12])
     # 4. [‘Francis’, ‘George’, ‘Harold’, ‘Imogen’, ‘Jackie’, ‘Kurt’, ‘Linda’] (using one number in the slice)
 
-
+print(names[5:])
 
     # 5. [‘Linda’] (using a positive number)
 
-
+print(names)
     # 6. [‘Linda’] (using a negative number)
 
 
@@ -55,6 +54,3 @@ def main():
 
 
 
-
-if __name__ == '__main__':
-    main()
