@@ -5,7 +5,11 @@ def add_numbers(numbers):
     :param numbers: a list of numbers
     :return: the sum of all the numbers in the list
     """
-    pass # remove this line when starting your function
+    total_sum = 0
+
+    for x in numbers:
+        total_sum += x
+    return total_sum
 
 def get_max(numbers):
     """
@@ -32,3 +36,9 @@ def merge(list1, list2):
     :return: a single list consisting of both smaller lists combined in sorted order.
     """
     pass # remove this line when starting your function
+
+print("add numbers:")
+numbers_list = [9, 5, 11, 6, 1, 15]
+result = add_numbers(numbers_list)
+print(result)
+print("")
