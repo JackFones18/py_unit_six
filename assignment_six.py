@@ -2,7 +2,7 @@ import random
 
 def get_birthdays():
     """Generate a list of 23 random numbers representing birthdays."""
-    return [random.randint(1, 365) for _ in range(23)]
+    return [random.randint(1, 365) for w in range(23)]
 
 def is_duplicates(birthdays):
     """Check if there are duplicate birthdays in the given list."""
