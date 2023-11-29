@@ -1,11 +1,18 @@
 import random
 
 def get_birthdays():
-    """Generate a list of 23 random numbers representing birthdays."""
+    """
+    creates a random list of 23 numbers between 1 and 365, which will serve as the birthdays.
+    :return: list of 23 random numbers
+    """
     return [random.randint(1, 365) for _ in range(23)]
 
 def is_duplicates(birthdays):
-    """Check if there are duplicate birthdays in the given list."""
+    """
+    tests to see whether there are duplicate birthdays
+    :param birthdays: the random list of numbers
+    :return: returns true or false, indicating whether there are duplicates.
+    """
     for x in range(len(birthdays)):
         for y in range(x + 1, len(birthdays)):
             if birthdays[x] == birthdays[y]:
@@ -13,7 +20,6 @@ def is_duplicates(birthdays):
     return False
 
 def main():
-    """Run the birthday simulation and calculate the percentage of times with duplicates."""
     duplicate_count = 0
 
     try:
